@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ui-page
+  namespace: demo-app
+data:
+  index.html: |
+    <html>
+    <head>
+      <title>Beautiful UI</title>
+      <style>
+        body {
+          margin: 0;
+          font-family: Arial;
+          background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF, #9D4EDD);
+          background-size: 400% 400%;
+          animation: gradient 12s ease infinite;
+          color: white;
+          text-align: center;
+          padding-top: 100px;
+        }
+        @keyframes gradient {
+          0% {background-position: 0% 50%;}
+          50% {background-position: 100% 50%;}
+          100% {background-position: 0% 50%;}
+        }
+        h1 { font-size: 60px; text-shadow: 3px 3px 10px rgba(0,0,0,0.4); }
+        p { font-size: 22px; margin-top: 20px; font-weight: bold; }
+        .card {
+          margin: 40px auto;
+          width: 300px;
+          padding: 20px;
+          background: rgba(255,255,255,0.2);
+          border-radius: 15px;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+      </style>
+    </head>
+    <body>
+      <h1>🎉 Welcome to a Beautiful Kubernetes UI 🎉</h1>
+      <p>Your app is successfully deployed using ArgoCD 🚀</p>
+      <div class="card">
+        <p>Enjoy the colorful animated background!</p>
+        <p>✔ LoadBalancer Working</p>
+        <p>✔ ArgoCD Deployment</p>
+        <p>✔ Kubernetes Ready</p>
+      </div>
+    </body>
+    </html>
