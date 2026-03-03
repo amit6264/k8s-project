@@ -38,10 +38,10 @@ data:
       </style>
     </head>
     <body>
-      <h1>🎉 Welcome to a Beautiful Kubernetes UI 🎉</h1>
+      <h1>🎉 Welcome to a Kubernetes UI 🎉</h1>
       <p>Your app is successfully deployed using ArgoCD 🚀</p>
       <div class="card">
-        <p>Enjoy the colorful animated background!</p>
+        <p>This is fully automation process!</p>
         <p>✔ LoadBalancer Working</p>
         <p>✔ ArgoCD Deployment</p>
         <p>✔ Kubernetes Ready</p>
